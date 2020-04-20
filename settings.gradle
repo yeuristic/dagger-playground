@@ -1,0 +1,4 @@
+rootProject.name='Dagger Playground'
+include ':app'
+include ':common_lib'
+include ':flight'

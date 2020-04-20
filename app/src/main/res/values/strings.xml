@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Dagger Playground</string>
+    <string name="button_flight">Flight</string>
+</resources>
