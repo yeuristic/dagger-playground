@@ -1,7 +1,10 @@
 package com.yeuristic.flight.provider
 
-class FlightPassengerProviderImpl: FlightPassengerProvider {
+import com.yeuristic.common_lib.age.AgeGenerator
+import com.yeuristic.common_lib.name.NameGenerator
+
+class FlightPassengerProviderImpl(val nameGenerator: NameGenerator, val nameWords: Int, val ageGenerator: AgeGenerator): FlightPassengerProvider {
     override fun providesPassenger(): PassengerData {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        return PassengerData(nameGenerator.generateName(nameWords), ageGenerator.generateAge())
     }
 }
